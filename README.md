@@ -6,7 +6,11 @@ A data visualization tool for visualizing results from machine learning and opti
 Add the following dependency to your POM file:
 
 ```xml
-
+<dependency>
+  <groupId>com.github.chen0040</groupId>
+  <artifactId>java-data-visualizer</artifactId>
+  <version>1.0.1</version>
+</dependency>
 ```
 
 # Usage
@@ -30,7 +34,5 @@ To visualize the cost trend vs generation as the optimization progress:
 List<Double> costTrends = Arrays.asList(1.0, 1.2, 1.3, 1.34, 1.23, 1.11, 1.5);
 
 CostTrend chart = new CostTrend(costTrends, "cost vs generation");
-
-RefineryUtilities.centerFrameOnScreen( chart );
 chart.showIt(true);
 ```
